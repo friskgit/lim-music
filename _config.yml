@@ -1,0 +1,20 @@
+# Site settings
+title: music and more
+email: lim@henrikfrisk.com 
+description: "This is the home of lim, a quartet of Henrik Frisk, David Carlsson, Samuel Hallkvist and Peter Nilsson."
+logo_location: "media/img/lim_logo-small.jpg"
+permalink: /:categories/:title
+
+#baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+#url: "http://www.lim-music.org" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+highlighter: pygments
+
+#Other Global Configuration
+exclude: ['README.md']

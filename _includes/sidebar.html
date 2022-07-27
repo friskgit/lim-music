@@ -1,0 +1,16 @@
+<div id="sidebar">
+  <h5>Recent posts</h5>
+  <table style="width:100%">
+    {% for post in site.posts limit:20 %}  
+    <tr class="posts"> 
+      <td class="date">  
+	<!--		  {{ post.date | date_to_string }} -->
+      </td>
+      <td class="title">
+	<a href="{{ BASE_PATH }}{{ post.url }}">  
+	  {{ post.title }}</a>  
+      </td>  
+    </tr>
+    {% endfor %}  
+  </table>
+</div>

@@ -1,0 +1,25 @@
+mainmenu:
+  home:
+    url: "/"
+    text: "home"
+    icon_class: "fa-home"
+  members:
+    url: "/members/"
+    text: "members"
+    icon_class: "fa-male"
+  recordings:
+    url: "/recordings/"
+    text: "recordings"
+    icon_class: "fa-play-circle"
+  concerts:
+    url: "/shows/"
+    text: "shows"
+    icon_class: "fa-play-circle"
+  listen:
+    url: "/listen/"
+    text: "listen"
+    icon_class: "fa-play-circle"
+  blog:
+    url: "/blog/"
+    text: "blog"
+    icon_class: "fa-play-circle"

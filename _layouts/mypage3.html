@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+    <div class="page">
+
+      <header class="page-header">
+        <h1 class="page-title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+          <h5 class="page-subtitle"> {{ page.subtitle }} </h5>
+        {% endif %}
+
+          <time>
+            {{ page.date | date:'%A, %B %d, %Y'}}
+          </time>
+
+      </header>
+
+      <article class="page-content">
+	<div id="wrap">
+	  <div id="main">
+	    {{ content }}
+	  </div>
+	  <div id="sidebar">
+	    <h5>Recent posts</h5>
+	    <table style="width:100%">
+	    <ul class="posts"> 
+	      {% for post in site.posts limit:20 %}  
+	      <li>  
+		<span>{{ post.date | date_to_string }}</span> &raquo;
+		<a href="{{ BASE_PATH }}{{ post.url }}">  
+		  {{ post.title }}</a>  
+	      </li>  
+	      {% endfor %}  
+	    </ul>
+	  </div>
+	</div>
+      </article>
+    </div>
+  </div>
+</div>
